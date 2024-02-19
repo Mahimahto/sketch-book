@@ -34,21 +34,21 @@ totalNode.forEach((div) => {
 })
 var mousedown = 0
 totalNode.forEach((div) => {
-  div.addEventListener("mousedown", () => {
-    mousedown = true;
-    div.style.backgroundColor = newColor;
-  })
+	div.addEventListener("mousedown", () => {
+		mousedown = true;
+		div.style.backgroundColor = newColor;
+	})
 })
 
 totalNode.forEach((div) => {
-  div.addEventListener("mouseup", () => {
-    mousedown = false;
-  })
+	div.addEventListener("mouseup", () => {
+		mousedown = false;
+	})
 })
 
 totalNode.forEach((div) => {
-  div.addEventListener("mouseover", () => {
-    if (mousedown === true)
-      div.style.backgroundColor = newColor;
-  })
+	div.addEventListener("mouseover", () => {
+		if (mousedown === true)
+			div.style.backgroundColor = newColor;
+	})
 })
